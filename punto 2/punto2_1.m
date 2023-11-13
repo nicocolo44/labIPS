@@ -14,7 +14,7 @@ delta = [1 zeros(1,N)]
 subplot(2,1,1);
 stem(n,h);
 grid on;
-h1 = sistema2(N + 1,delta);
+h1 = sistema2(delta);
 disp(length(h1));
 M = 0:(N)
 subplot(2,1,2);
