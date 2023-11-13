@@ -14,6 +14,8 @@ y = sistema2(x);
 %subplot(3,1,2);
 plot(y);
 
+
+%punto 5
 y1 = filtro1(y);
 %sound(y1, fs);
 subplot(4,1,2);
