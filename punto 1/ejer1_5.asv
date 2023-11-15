@@ -1,0 +1,57 @@
+addpath('..\..\MATLAB\funciones')
+addpath('sistemas')
+[n,x] = senial(28569);
+ds=0.001;
+s= [-2:ds:2];
+
+%SISTEMA 1 
+y1 = sistema1(x);
+Y1 = TFTD(n,y1)
+modulo1 = abs(Y1);
+fase1 = angle(Y1);
+subplot(4,2,1);
+plot(s,modulo1);
+title('TFTD de la salida del sistema 1');
+xlabel('Modulo de Y1');
+ylabel('Frecuencia');
+subplot(4,2,2);
+plot(s, fase1);
+xlabel('Angulo de Y1');
+ylabel('Frecuencia');
+
+%SISTEMA 2
+y2 = sistema2(x);
+Y2 = TFTD(n,y2)
+modulo2 = abs(Y2);
+fase2 = angle(Y2);
+subplot(4,2,3);
+plot(s,modulo2);
+title('TFTD de la salida del sistema 2');
+xlabel('Modulo de Y2');
+ylabel('Frecuencia');
+subplot(4,2,4);
+plot(s, fase2);
+xlabel('Angulo de Y2');
+ylabel('Frecuencia');
+
+%SISTEMA 3
+y3 = sistema3(x);
+Y3 = TFTD(n,y3)
+modulo3 = abs(Y3);
+fase1 = angle(Y1);
+subplot(4,2,1);
+plot(s,modulo1);
+title('TFTD de la salida del sistema 1');
+xlabel('Modulo de Y1');
+ylabel('Frecuencia');
+subplot(4,2,2);
+plot(s, fase1);
+xlabel('Angulo de Y1');
+ylabel('Frecuencia');
+
+%SISTEMA 4
+y4 = sistema4(x);
+Y4 = TFTD(n,y4)
+subplot(2,2,4);
+plot(s,Y4);
+
