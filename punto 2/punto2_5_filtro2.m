@@ -4,19 +4,16 @@ addpath(fullfile(scriptDir, '..', 'funciones'));
 addpath(fullfile(scriptDir, '..', 'punto 2\sistemas'));
 
 [x, fs] = audioread('audio.wav');
+
+
+%punto 5
 subplot(2,1,1);
-stem(x);
-ylabel('x[n]');
-xlabel('n');
-title('Señal x[n]');
+stem(x)
 
-y = sistema2(x);
-
-sound(y, fs);
+y= sistema2(x)
+y2 = filtro2(y);
+sound(y2, fs);
 subplot(2,1,2);
-stem(y);
-ylabel('y[n]');
-xlabel('n');
-title('Señal x[n] pasada por el canal (y[n])');
+stem(y2);
 
-print -f1 -dpng ejer2_3
+print -f1 -dpng ejer2_5_filtro2
