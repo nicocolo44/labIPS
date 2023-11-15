@@ -6,7 +6,7 @@ numA = 028569;
 [n,x] = senial(numA);
 subplot(3,1,1);
 stem(n,x);
-title('Señal del  ejercicio 1');
+title('Señal en variable discreta');
 xlabel('n');
 ylabel('x');
 grid on;
@@ -20,8 +20,15 @@ ds=0.001;
 s= [-2:ds:2];
 subplot(3,1,2);
 plot(s, modulo);
+title('Señal en el dominio de la frecuencia (TFTD)');
+xlabel('s');
+ylabel('Modulo');
 subplot(3,1,3);
 plot(s, fase)
+xlabel('s');
+ylabel('Angulo');
+
+print -f1 -dpng figurita
 
 
 
