@@ -63,3 +63,6 @@ title('Fase de la TFTD de h3a');
 xlabel('Frecuencia');
 ylabel('Fase (radianes)');
 grid on;
+
+
+print -f1 -dpng ejer1_3_3
