@@ -1,5 +1,5 @@
-addpath('..\..\MATLAB\funciones')
-addpath('sistemas')
+addpath('..\funciones');
+addpath('sistemas');
 clear all; close all; clc;
 
 numA = 028569;

@@ -1,5 +1,5 @@
-addpath('..\..\MATLAB\funciones')
-addpath('sistemas')
+addpath('..\funciones');
+addpath('sistemas');
 [n,x] = senial(28569);
 ds=0.00025;
 s= [-0.5:ds:0.5];

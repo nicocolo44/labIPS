@@ -1,4 +1,4 @@
-addpath('..\..\MATLAB\funciones')
+addpath('..\funciones');
 addpath('sistemas')
 N = 10; 
 delta = [zeros(1,N) 1 zeros(1,N)];

@@ -1,5 +1,5 @@
-addpath('..\..\MATLAB\funciones')
-addpath('sistemas')
+addpath('..\funciones');
+addpath('sistemas');
 [n,x] = senial(28569);
 
 %SISTEMA 1 
