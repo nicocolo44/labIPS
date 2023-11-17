@@ -16,8 +16,8 @@ X = TFTD(n,x);
 modulo = abs(X);
 fase = angle(X);
 
-ds=0.001;
-s= [-2:ds:2];
+ds=0.00025;
+s= [-0.5:ds:0.5];
 subplot(3,1,2);
 plot(s, modulo);
 title('Señal en el dominio de la frecuencia (TFTD)');
@@ -28,7 +28,7 @@ plot(s, fase)
 xlabel('s');
 ylabel('Angulo');
 
-print -f1 -dpng figurita
+%print -f1 -dpng figurita
 
 
 

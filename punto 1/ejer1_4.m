@@ -35,4 +35,4 @@ title('Salida del sistema 4');
 xlabel('y[n]');
 ylabel('n');
 
-print -f1 -dpng ejer1_4
+%print -f1 -dpng ejer1_4

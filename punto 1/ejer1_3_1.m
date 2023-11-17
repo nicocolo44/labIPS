@@ -4,8 +4,8 @@ N = 10;
 delta = [zeros(1,N) 1 zeros(1,N)];
 delta1 = [zeros(1,(N+1)) 1 zeros(1,(N-1))];
 n = [-N: N]
-ds=0.001;
-s= [-2:ds:2];
+ds=0.00025;
+s= [-0.5:ds:0.5];
 
 
 
@@ -64,3 +64,4 @@ title('Fase de la TFTD analitica ');
 xlabel('Frecuencia');
 ylabel('Fase (radianes)');
 grid on;
+

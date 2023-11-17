@@ -19,4 +19,4 @@ ylabel('y[n]');
 xlabel('n');
 title('Señal x[n] pasada por el canal (y[n])');
 
-print -f1 -dpng ejer2_3
+%print -f1 -dpng ejer2_3

@@ -2,8 +2,8 @@ addpath('..\..\MATLAB\funciones')
 addpath('sistemas')
 N = 10; delta = [zeros(1,N) 1 zeros(1,N)];
 n = [-N: N]
-ds=0.001;
-s= [-2:ds:2];
+ds=0.00025;
+s= [-0.5:ds:0.5];
 
 %SISTEMA 3
 y3 = sistema3(delta);
@@ -63,3 +63,4 @@ title('Fase de la TFTD de h3a');
 xlabel('Frecuencia');
 ylabel('Fase (radianes)');
 grid on;
+

@@ -24,4 +24,4 @@ ylabel('Salida');
 xlabel('n');
 title('Respuesta impulsional de filtro de 3 ramas + canal');
 
-print -f1 -dpng ejer2_4
+%print -f1 -dpng ejer2_4

@@ -27,4 +27,4 @@ xlabel('n');
 title('Respuesta impulsional de ecuacion en diferencias');
 grid on;
 
-print -f1 -dpng ejer2_1y2
+%print -f1 -dpng ejer2_1y2

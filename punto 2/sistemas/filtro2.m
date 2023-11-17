@@ -11,6 +11,6 @@ for i = 1:N
     if i > 26460
         y(i) = y(i) - 0.091125 * x(i - 26460);
     end
-end  
+    end  
 end
 

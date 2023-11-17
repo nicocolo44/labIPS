@@ -1,8 +1,8 @@
 addpath('..\..\MATLAB\funciones')
 addpath('sistemas')
 [n,x] = senial(28569);
-ds=0.001;
-s= [-2:ds:2];
+ds=0.00025;
+s= [-0.5:ds:0.5];
 
 %SISTEMA 1 
 y1 = sistema1(x);
@@ -65,6 +65,6 @@ ylabel('Angulo de Y4');
 xlabel('Frecuencia');
 
 
-print -f1 -dpng ejer1_5
+%print -f1 -dpng ejer1_5
 
 

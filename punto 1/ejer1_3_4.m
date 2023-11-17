@@ -2,8 +2,8 @@ addpath('..\..\MATLAB\funciones')
 addpath('sistemas')
 N = 10; delta = [zeros(1,N) 1 zeros(1,N)];
 n = [-N: N]
-ds=0.001;
-s= [-2:ds:2];
+ds=0.00025;
+s= [-0.5:ds:0.5];
 
 %SISTEMA 4
 y4 = sistema4(delta);
