@@ -6,4 +6,4 @@ El menú desplegara en la consola de MATLAB diferentes opciones relacionadas con
 y 2 de la practica. Tendrá que ingresar el numero de la opcion que desea ver mediante teclado.
 Podrá seguir seleccionando opciones hasta que el usuario ingrese la opcion 0 (salir).
 
-Al ejecutarlo en MATLAB se debe estar ubicado en la carpeta MATLAB para que funcione correctamente.
+Al ejecutarlo en MATLAB se debe estar ubicado en la carpeta donde se encuentre el script main.m para que funcione correctamente.
