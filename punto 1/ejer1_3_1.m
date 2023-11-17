@@ -65,3 +65,4 @@ xlabel('Frecuencia');
 ylabel('Fase (radianes)');
 grid on;
 
+print -f1 -dpng ejer1_3_1
