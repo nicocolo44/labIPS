@@ -1,5 +1,5 @@
-addpath('..\..\MATLAB\funciones')
-addpath('sistemas')
+addpath('..\MATLAB\funciones');
+addpath('sistemas');
 N = 10; delta = [zeros(1,N) 1 zeros(1,N)];
 n = [-N: N]
 ds=0.00025;
@@ -64,5 +64,3 @@ xlabel('Frecuencia');
 ylabel('Fase (radianes)');
 grid on;
 
-
-print -f1 -dpng ejer1_3_3

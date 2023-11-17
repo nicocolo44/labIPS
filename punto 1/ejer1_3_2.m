@@ -1,7 +1,6 @@
-addpath('..\..\MATLAB\funciones')
-addpath('sistemas')
-N = 10; 
-delta = [zeros(1,N) 1 zeros(1,N)];
+addpath('..\MATLAB\funciones');
+addpath('sistemas');
+N = 10; delta = [zeros(1,N) 1 zeros(1,N)];
 delta1 = [zeros(1,(N+1)) 1 zeros(1,(N-1))];
 n = [-N: N]
 ds=0.00025;
@@ -10,17 +9,16 @@ s= [-0.5:ds:0.5];
 
 %SISTEMA 2
 y2 = sistema2(delta);
-Y2 = TFTD(n, y2);
-
-modulo2 = abs(Y2);
-fase2 = angle(Y2);
-
 subplot(2,3,1);
 stem(n,y2);
 title('Sistema h2');
 xlabel('Eje n');
 ylabel('Eje h[n]');
 grid on;
+
+Y2 = TFTD(n, y2);
+modulo2 = abs(Y2);
+fase2 = angle(Y2);
 
 subplot(2,3,2);
 plot(s,modulo2);
@@ -64,5 +62,3 @@ xlabel('Frecuencia');
 ylabel('Fase (radianes)');
 grid on;
 
-
-print -f1 -dpng ejer1_3_2
